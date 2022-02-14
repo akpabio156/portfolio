@@ -1,0 +1,126 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.upper_div {
+  background-color: green;
+  height: 3rem;
+  text-align: center;
+  color: white;
+}
+.navbar {
+  padding: 0px 30px 0px 30px !important;
+  /* background-color: white !important; */
+}
+.collapse {
+  display: flex;
+  justify-content: end;
+  display: block;
+}
+.navbar img {
+  height: 5rem;
+  width: 5rem;
+}
+.input-container {
+  border-radius: 20px;
+  padding: 5px;
+  font-size: 20px;
+  background-color: white;
+  display: block;
+}
+.input-field {
+  border-radius: 10px;
+}
+.vue_text h1 {
+  font-size: 7rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#vue_h2 {
+  font-size: 7.5rem;
+}
+.vue_text {
+  text-align: center;
+}
+.vue_text p {
+  font-size: 32px;
+}
+
+.bttn {
+  gap: 20px;
+}
+.h_builder {
+  border-bottom: 2px solid rgb(114, 111, 111);
+  height: 100px;
+  border-top: 2px solid rgb(114, 111, 111);
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.h_builder img {
+  height: 5rem;
+}
+.h_builder p {
+  padding-top: 20px;
+}
+
+@media (max-width: 425px) {
+  .vue_text h1 {
+    font-size: 3rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  #vue_h2 {
+    font-size: 4rem;
+  }
+  .vue_text p {
+    font-size: 25px;
+  }
+  .h_builder p {
+    font-size: 12px;
+  }
+  .navbar {
+    padding: 0px 3px 0px 3px !important;
+  }
+  .h_builder {
+    height: 80px;
+  }
+  .h_builder img {
+    height: 4rem;
+  }
+}
+@media (max-width: 375px) {
+  .navbar {
+    padding: 0px 1 px 0px 1px !important;
+  }
+  .navbar img {
+    height: 2rem;
+    width: 2rem;
+  }
+  .vue_text h1 {
+    font-size: 2rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  #vue_h2 {
+    font-size: 2rem;
+  }
+  .vue_text p {
+    font-size: 20px;
+  }
+  .vue_text {
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 320px) {
+  .vue_text p {
+    font-size: 15px;
+  }
+  .navbar {
+    padding: 0px 1px 0px 1px !important;
+  }
+  .navbar img {
+    height: 2rem;
+    width: 2rem;
+  }
+}
