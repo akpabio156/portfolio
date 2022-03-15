@@ -10,7 +10,6 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  text-align: center;
   line-height: 1.5;
 }
 h1 {
@@ -25,6 +24,9 @@ a {
 }
 a:hover {
   transition: all 0.3s ease-in-out;
+}
+.navbar {
+  background-color: #ff8400;
 }
 .section-title {
   margin-bottom: 4.5rem;
@@ -41,12 +43,12 @@ a:hover {
 }
 .text-color-main {
   margin-left: 1rem;
-  color: #5b86e5;
-  -webkit-text-fill-color: #5b86e5;
+  color: #f96702;
+  -webkit-text-fill-color: #f96702;
 }
 @supports (background-clip: text) or (-webkit-background-clip: text) {
   .text-color-main {
-    background-image: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%);
+    background-image: linear-gradient(135deg, brown 0%, orange 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -57,7 +59,7 @@ a:hover {
   .text-color-main {
     margin: 0;
     background-image: none;
-    -webkit-text-fill-color: #5b86e5;
+    -webkit-text-fill-color: #f96702;
     box-shadow: none;
   }
 }
@@ -84,7 +86,7 @@ a:hover {
   content: "";
   display: block;
   position: absolute;
-  background-image: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%);
+  background-image: linear-gradient(135deg, #dd620a 0%, #f96702 100%);
   width: 0px;
   height: 100%;
   left: 0;
@@ -100,15 +102,15 @@ a:hover {
   }
 }
 .cta-btn--hero {
-  color: #5b86e5;
-  -webkit-text-fill-color: #5b86e5;
+  color: #f96702;
+  -webkit-text-fill-color: #f96702;
   border: 2px solid transparent;
-  border-image: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%);
+  border-image: linear-gradient(135deg, #aa5010 0%, #f96702 100%);
   border-image-slice: 1;
 }
 @supports (background-clip: text) or (-webkit-background-clip: text) {
   .cta-btn--hero {
-    background-image: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%);
+    background-image: linear-gradient(135deg, #db7226 0%, #f96702 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -118,7 +120,7 @@ a:hover {
 @media screen and (-ms-high-contrast: active),
   screen and (-ms-high-contrast: none) {
   .cta-btn--hero {
-    color: #5b86e5;
+    color: #f96702;
   }
   .cta-btn--hero:hover {
     color: #fff;
@@ -127,9 +129,9 @@ a:hover {
 @media (max-width: 37.5em) {
   .cta-btn--hero {
     background-image: none;
-    border: 2px solid #5b86e5;
+    border: 2px solid #f96702;
     box-shadow: none;
-    -webkit-text-fill-color: #5b86e5;
+    -webkit-text-fill-color: #f96702;
   }
 }
 .cta-btn--hero::after {
@@ -143,7 +145,7 @@ a:hover {
 }
 @media (max-width: 37.5em) {
   .cta-btn--hero:hover {
-    -webkit-text-fill-color: #5b86e5;
+    -webkit-text-fill-color: ;
   }
 }
 .cta-btn--hero:hover::after {
@@ -158,7 +160,7 @@ a:hover {
   background: #fff;
 }
 .cta-btn--resume:hover {
-  color: #5b86e5;
+  color: #f96702;
   text-decoration: none;
   box-shadow: none;
 }
@@ -197,10 +199,15 @@ a:hover {
 .footer {
   background-color: #333;
   padding: 4.8rem 0;
+  text-align: center;
 }
 .footer__text {
   font-size: 1.3rem;
   color: gray;
+}
+.footer h3 {
+  font-weight: 500px;
+  font-size: 40px;
 }
 .footer__text a {
   font-size: 1.3rem;
@@ -210,7 +217,7 @@ a:hover {
 }
 .footer__text a:hover,
 .footer__text a:active {
-  color: #36d1dc;
+  color: #f96702 2px;
 }
 .footer hr {
   margin: 1rem auto;
@@ -240,13 +247,13 @@ a:hover {
   transform: scale(1.1) translateY(-2px);
 }
 .social-links a:hover .fa-twitter {
-  color: #00acee;
+  color: #f96702 2px;
 }
 .social-links a:hover .fa-instagram {
   color: #c13584;
 }
 .social-links a:hover .fa-linkedin {
-  color: #4875b4;
+  color: #f96702 2px;
 }
 .social-links a:hover .fa-codepen {
   color: #212121;
@@ -325,12 +332,19 @@ section .row span {
   }
 }
 #about {
-  background-color: #36d1dc;
-  background-image: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%);
+  background-color: #f96702;
+  background-image: linear-gradient(
+    135deg,
+    #f96702,
+    #ff8400 2px,
+    #f96702 2px,
+    #f96702 10px
+  );
   color: #fff;
   height: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   padding-bottom: 10%;
+  text-align: center;
 }
 @media (max-width: 75em) {
   #about {
@@ -383,26 +397,143 @@ section .row span {
     text-align: center;
   }
 }
-#Blog {
-  /* background-color: #36d1dc; */
-  /* background-image: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%); */
-  color: black;
-  /* height: 110rem; */
 
-  padding-bottom: 10%;
-  /* align-items: center; */
-  background-color: #5f5b5b;
+.service_info {
+  /* color: white; */
+  height: 100rem;
+  /* text-align: left; */
+  background-color: #e5e5e5;
+
+  max-width: 100%;
 }
-#blog_img {
-  background-image: url(/image/john-schnobrich-2FPjlAyMQTA-unsplash.jpg);
-  height: 50rem;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-size: cover;
+#services h2 {
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
 }
-.card {
-  height: 50rem;
+.brandYourName_logo {
+  color: #f96702;
+  -webkit-font-smoothing: antialiased !important;
+  text-shadow: 1px 1px 1px rgb(0 0 0 / 0%);
+  display: block;
+  box-sizing: border-box;
+  font-family: "NeuePlakText-Regular", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
+
+.brand_wrapper {
+  /* height: 100px; */
+  /* width: 100%; */
+  /* max-width: 100%; */
+  padding-bottom: 0;
+  background: repeating-linear-gradient(
+    135deg,
+    #f96702,
+    #ff8400 2px,
+    #f96702 2px,
+    #f96702 10px
+  );
+  /* height: 10rem; */
+}
+
+.marquee {
+  margin: -7px 0 0 0;
+  border-left: 0;
+  border-bottom-right-radius: 40px;
+}
+#brand_text {
+  padding-top: 40px;
+  color: white;
+  word-spacing: 15px;
+  font-style: italic;
+}
+.w_fill {
+  width: calc(20% - 80px);
+  display: block;
+  /* height: 100px; */
+  background: white;
+  position: absolute;
+  width: fit-content;
+  z-index: 1;
+}
+
+.canva2 img {
+  height: 75rem;
+  width: 100%;
+  min-width: 50%;
+  margin: 3px;
+}
+.canva2 {
+  width: 100%;
+}
+.canva3 {
+  width: 100%;
+}
+.canva {
+  margin: 20px;
+  text-align: center;
+  background-color: #5f5852;
+
+  color: white;
+}
+.canva_set {
+  display: flex;
+  justify-content: center;
+  /* text-align: left; */
+  margin: 20px;
+  background-color: #5f5852;
+}
+
+#monthly_archives {
+  border-bottom: 1px solid white;
+}
+@media (max-width: 425px) {
+  .canva h4,
+  p {
+    font-size: 13px;
+  }
+  .canva_set {
+    display: block;
+  }
+  .canva {
+    height: 47rem;
+  }
+  .canva2 img {
+    height: 40rem;
+  }
+}
+@media (max-width: 375px) {
+  .canva h4,
+  p {
+    font-size: 10px;
+  }
+  .canva_set {
+    display: block;
+  }
+  .canva {
+    height: 45rem;
+  }
+  .canva2 img {
+    height: 40rem;
+  }
+}
+@media (max-width: 320px) {
+  .canva_set {
+    display: block;
+  }
+  .canva {
+    height: 45rem;
+  }
+  .canva2 img {
+    height: 40rem;
+  }
+  .canva h4,
+  p {
+    font-size: 10px;
+  }
+}
+
 #intro {
   padding: 20px;
   font-size: 30px;
@@ -414,39 +545,7 @@ section .row span {
   padding: 20px;
   color: white;
 }
-#contact {
-  background-image: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%);
-  /* clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%); */
-  padding: 15rem 0 10rem 0;
-  margin-top: -15rem;
-  margin-bottom: -1px;
-  color: #fff;
-}
-@media (max-width: 75em) {
-  #contact {
-    padding: 10rem 0;
-    margin-top: 0;
-    clip-path: none;
-  }
-}
-#contact .contact-wrapper {
-  margin-top: 3.2rem;
-  padding: 0 2rem;
-  backface-visibility: hidden;
-}
-#contact .contact-wrapper__text {
-  margin-bottom: 2.5rem;
-}
-#contact .contact-wrapper__text,
-#contact .contact-wrapper a {
-  font-size: 2.4rem;
-}
-@media (max-width: 37.5em) {
-  #contact .contact-wrapper__text,
-  #contact .contact-wrapper a {
-    font-size: 2rem;
-  }
-}
+
 #hero {
   min-height: 100vh;
   height: 100vh;
@@ -463,6 +562,7 @@ section .row span {
   z-index: -1;
   line-height: 1.2;
   animation: hidden 1000ms linear forwards;
+  background-image: url(https://picsum.photos/g/3000/2000);
 }
 @media (max-width: 56.25em) {
   #hero {
@@ -543,7 +643,7 @@ section .row span {
   position: absolute;
   top: 20%;
   left: 50%;
-  border: 2px solid #5b86e5;
+  border: 2px solid #f96702;
   transform: translate(-50%, -100%) rotate(45deg);
   border-top: none;
   border-left: none;
@@ -584,6 +684,7 @@ section .row span {
   color: #272341;
   margin-top: -15rem;
   padding-top: 15rem;
+  text-align: center;
 }
 @media (max-width: 75em) {
   #projects {
